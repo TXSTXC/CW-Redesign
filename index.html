@@ -11,11 +11,11 @@
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     </head>
 
-    <body class="w-dvw h-dvh bg-[#08a080] flex flex-col items-center min-w-[500px]">
+    <body class="w-full h-dvh bg-[#08a080] flex flex-col items-center min-w-[500px]">
 
 
 
-        
+        <!-- HEADER Section -->
         <header class="w-full bg-white border-b border-gray-300 shadow-sm">
             <div class="mx-auto flex max-w-6xl flex-col sm:flex-row sm:items-center sm:justify-between px-4 py-4">
             
@@ -39,37 +39,108 @@
                 <li><a href="#" class="hover:text-[#812d8b]">Contact us</a></li>
                 </ul>
             </nav>
-
             </div>
         </header>
 
         <!-- Main Header -->
-        <main class="mt-10 max-w-6xl px-4 flex flex-col items-center gap-5">
-            <h1 class="sm:text-[5rem] text-[4rem] font-extrabold text-white ">Field Service Management<br> Software</h1>
-            <div class="flex flex-col sm:flex-row gap-5 self-start items-space-between">
-                <h2 class="self-start text-white text-[1.5rem]"> Helping you optimise your business<br> processes whilst saving time and money.</h2>
-                <button type="button" class="border-2 text-white border-[white] p-2 rounded-xl hover:border-[#812d8b] hover:border-3 hover:font-bold">Book a FREE demo</button>
-            </div>
-            <button></button>
-            <button></button>
+        <main class="max-w-6xl p-10 flex flex-col justify-center">
+            <h1 class="sm:text-[5rem] text-[4rem] font-bold text-white content-center ">Field Service Management<br> Software</h1>
+            <h2 class="sm:self-start text-white text-[1.5rem]"> Helping you optimise your business<br> processes whilst saving time and money.</h2>
+            <a><button type="button" class="border-2 text-[White] border-[#812d8b] p-5 rounded-xl bg-[#812d8b] hover:border-3 hover:font-bold mt-5 hover:shadow-lg">Book a FREE Demo</button></a>
         </main>
 
-        <!-- 2nd Text + Image -->
-        <div class="w-full px-4 py-10 flex sm:flex-row flex-col-reverse justify-center items-center gap-5 bg-white shadow-2xl">
-            <div class="flex flex-col justify-center items-center max-w-2xl">
-                <h2 class="text-[3rem] font-bold text-[#812d8b] self-start">Could you be doing things more efficiently?</h2>
-                <p class="text-gray-600 text-left max-w-3xl">Our Field Service Management software is designed to streamline your operations, improve efficiency, 
-                    and enhance customer satisfaction. With features like real-time tracking, automated scheduling, and comprehensive reporting, our solution empowers 
+        <!-- 2nd TEXT + IMAGE -->
+        <div class="w-full p-10 flex sm:flex-row flex-col-reverse justify-center items-center gap-5 bg-white shadow-2xl">
+            <div class="flex flex-col justify-center items-center max-w-xl">
+                <h2 class="text-[2rem] sm:text-[3rem] text-[#812d8b] self-start">COULD YOU BE DOING THINGS MORE EFFICIENTLY?</h2>
+                <p class="text-gray-600 text-left max-w-3xl text-[1.5rem]">Our Field Service Management software is designed to streamline your operations, improve efficiency, 
+                    and enhance customer satisfaction. With features like real-time tracking, automated scheduling, reporting, and customer portal; our solution empowers 
                     your team to deliver exceptional service while reducing costs.</p>
             </div>
                 <img src="./media/pc-tab-mob.jpg" class="h-[300px]">
             </div>
-                            
-
         </div>
 
+        <!-- 3rd TEXT + CW Background IMAGE -->
+        <div class="bg-[url(./media/clockwork-bg-1.png)] w-full bg-cover flex justify-center items-center p-10">
+            <div class="p-10 flex sm:flex-row flex-col items-center gap-20 max-w-6xl">
+                <img src="./media/quote-pic.png" class="h-[300px] self-start">
+                <div class="flex flex-col">
+                    <h1 class="sm:text-[3rem] text-[2rem] text-white ">SOFTWARE FOR YOUR SECTOR</h1>
+                    <h2 class="text-white text-[1.5rem]"> Helping you optimise your business<br> processes whilst saving time and money.</h2>
+                </div>
+            </div>
+        </div>
 
+        <!-- SERVICES OFFERED ICONS -->
+         <div class="w-full bg-[white] flex flex-col items-center p-10 gap-5 mb-10">
 
+            <!-- HEADER -->
+            <div>
+                <h2 class="text-[#08a080] sm:text-[3rem] text-[2rem] sm:text-left text-center">WHAT OUR SOFTWARE CAN OFFER YOU</h2>
+            </div>
+
+            <!-- ICON TILES -->
+            <div class="flex sm:flex-row flex-col gap-20 max-w-6xl sm:mt-5 mt-5">
+
+                <!-- COL 1 -->
+                <div class="flex flex-col gap-5 h-full">
+
+                    <div class="flex flex-col justify-center items-center gap-5 p-5 rounded-xl shadow-xl sm:h-[350px]">
+                        <img src="./media/fm-icon.png" class="w-[100px]">
+                        <div class="flec flex-col gap-5">
+                            <a href="#"><p class="font-bold text-center text-[1.1rem]">Facilities Management</p></a>
+                            <p class="text-center">Reactive software packages that let you ramp up efficiency today.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col justify-center items-center gap-5 p-5 rounded-xl shadow-xl sm:h-[350px]">
+                        <img src="./media/sm-icon.png" class="w-[100px]">
+                        <div class="flec flex-col gap-5">
+                            <a href="#"><p class="font-bold text-center text-[1.1rem]">Service Management</p></a>
+                            <p class="text-center">Cut out waste and increase productivity on an ongoing basis.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- COL 2 -->
+                <div class="flex flex-col gap-5 h-full">
+                    <div class="flex flex-col justify-center items-center gap-5 p-5 rounded-xl shadow-xl sm:h-[350px]">
+                        <img src="./media/crm-icon.png" class="w-[100px]">
+                        <div class="flec flex-col gap-5">
+                            <a href="#"><p class="font-bold text-center text-[1.1rem]">CRM Software</p></a>
+                            <p class="text-center">Our CRM tools let you offer an unparalleled level of customer service.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col justify-center items-center gap-5 p-5 rounded-xl shadow-xl sm:h-[350px]">
+                        <img src="./media/resource-icon.png" class="w-[100px]">
+                        <div class="flec flex-col gap-5">
+                            <a href="#"><p class="font-bold text-center text-[1.1rem]">Resource Scheduling</p></a>
+                            <p class="text-center">Organise everything on one convenient platform.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- COL 3 -->
+                <div class="flex flex-col gap-5 h-full">
+                    <div class="flex flex-col justify-center items-center gap-5 p-5 rounded-xl shadow-xl sm:h-[350px]">
+                        <img src="./media/mobile-icon.png" class="w-[100px]">
+                        <div class="flec flex-col gap-5">
+                            <a href="#"><p class="font-bold text-center text-[1.1rem]">Mobile Applications</p></a>
+                            <p class="text-center">Keep staff connected when they're on the go with our mobile app.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-center items-center gap-5 p-5 rounded-xl shadow-xl sm:h-[350px]">
+                        <img src="./media/bespoke-icon.png" class="w-[100px]">
+                        <div class="flec flex-col gap-5">
+                            <a href="#"><p class="font-bold text-center text-[1.1rem]">Bespoke Software</p></a>
+                            <p class="text-center">Our CRM tools let you offer an unparalleled level of customer service.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
 
 
 
