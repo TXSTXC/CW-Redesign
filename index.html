@@ -17,32 +17,83 @@
 
         <!-- HEADER Section -->
         <header class="w-full bg-white border-b border-gray-300 shadow-sm sticky top-0 z-50">
-            <div class="mx-auto flex max-w-6xl flex-col sm:flex-row sm:items-center sm:justify-between px-4 py-4">
-                
-                <!-- Logo -->
-                <img
-                    src="./media/clockwork-logo.jpg"
-                    alt="Clockwork Logo"
-                    class="h-10 sm:h-8 object-contain"
-                />
+        <div class="mx-auto max-w-6xl px-4 py-4">
 
-                <!-- Navigation -->
-                <nav class="mt-4 sm:mt-0">
-                    <ul class="flex flex-col gap-3 sm:flex-row sm:gap-5 text-sm font-medium text-gray-700">
-                    <li><a href="#" class="text-[#812d8b]">Home</a></li>
-                    <li><a href="#" class="hover:text-[#812d8b]">Sectors</a></li>
-                    <li><a href="#" class="hover:text-[#812d8b]">Our Services</a></li>
-                    <li><a href="#" class="hover:text-[#812d8b]">Products</a></li>
-                    <li><a href="#" class="hover:text-[#812d8b]">Clients</a></li>
-                    <li><a href="#" class="hover:text-[#812d8b]">Blog</a></li>
-                    <li><a href="#" class="hover:text-[#812d8b]">About us</a></li>
-                    <li><a href="#" class="hover:text-[#812d8b]">Contact us</a></li>
-                    <li><a href="https://totalctrl.io/login" target="none" class="hover:text-[#812d8b] sm:ml-10">| Client Login</a></li>
-                    <li><a href="https://totalctrl.io/customer-portal" target="none" class="hover:text-[#812d8b]">| Customer Portal</a></li>
-                    </ul>
-                </nav>
-                <a href="#"class="border-2 text-[White] border-[#812d8b] p-3 rounded-xl bg-[#812d8b] hover:border-3 hover:font-bold mt-5 hover:shadow-lg max-w-[200px] text-center">Book a FREE Demo</a>
+            <!-- Top bar -->
+            <div class="flex items-center justify-between">
+
+            <!-- Logo -->
+            <img
+                src="./media/clockwork-logo.jpg"
+                alt="Clockwork Logo"
+                class="h-10 object-contain"
+            />
+
+            <!-- Burger button (md and below) -->
+            <button
+                id="menuBtn"
+                class="md:block lg:hidden text-gray-700 focus:outline-none"
+                aria-label="Toggle navigation"
+            >
+                <!-- Burger icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+
+            <!-- Desktop navigation -->
+            <nav class="hidden lg:flex items-center gap-6 text-sm font-medium text-gray-700">
+                <a href="#" class="text-[#812d8b]">Home</a>
+                <a href="#" class="hover:text-[#812d8b]">Sectors</a>
+                <a href="#" class="hover:text-[#812d8b]">Our Services</a>
+                <a href="#" class="hover:text-[#812d8b]">Products</a>
+                <a href="#" class="hover:text-[#812d8b]">Clients</a>
+                <a href="#" class="hover:text-[#812d8b]">Blog</a>
+                <a href="#" class="hover:text-[#812d8b]">About us</a>
+                <a href="#" class="hover:text-[#812d8b]">Contact us</a>
+
+                <a href="https://totalctrl.io/login" class="ml-6 hover:text-[#812d8b]">| Client Login</a>
+                <a href="https://totalctrl.io/customer-portal" class="hover:text-[#812d8b]">| Customer Portal</a>
+
+                <a
+                href="#"
+                class="ml-6 border-2 text-white border-[#812d8b] px-4 py-2 rounded-xl bg-[#812d8b] hover:shadow-lg"
+                >
+                Book a FREE Demo
+                </a>
+            </nav>
             </div>
+
+            <!-- Mobile menu -->
+            <div
+            id="mobileMenu"
+            class="hidden md:block lg:hidden mt-4 border-t pt-4"
+            >
+            <nav class="flex flex-col gap-4 text-sm font-medium text-gray-700">
+                <a href="#" class="text-[#812d8b]">Home</a>
+                <a href="#">Sectors</a>
+                <a href="#">Our Services</a>
+                <a href="#">Products</a>
+                <a href="#">Clients</a>
+                <a href="#">Blog</a>
+                <a href="#">About us</a>
+                <a href="#">Contact us</a>
+
+                <a href="https://totalctrl.io/login">Client Login</a>
+                <a href="https://totalctrl.io/customer-portal">Customer Portal</a>
+
+                <a
+                href="#"
+                class="mt-3 border-2 text-white border-[#812d8b] px-4 py-2 rounded-xl bg-[#812d8b] text-center"
+                >
+                Book a FREE Demo
+                </a>
+            </nav>
+            </div>
+
+        </div>
         </header>
 
         <!-- Main Header -->
@@ -222,46 +273,56 @@
 
 
         <!-- FOOTER -->
-        <footer class="w-full flex justify-center items-center bg-[#08a080] p-10">
+        <footer class="w-full flex justify-center items-center bg-[white] p-10">
             <div class="max-w-6xl flex justify-center items-center sm:gap-20 gap-5 sm:p-10">
-                <div class="flex flex-col justify-start gap-1">
-                    <p class="font-bold text-[0.9rem] text-white border-b-1 border-white pb-5 mb-1 ">About Us</p>
-                    <a href="#" class="sm:text-[0.9rem] text-[0.7rem] text-white">Sectors</a>
-                    <a href="#" class="sm:text-[0.9rem] text-[0.7rem] text-white">Our Services</a>
-                    <a href="#" class="sm:text-[0.9rem] text-[0.7rem] text-white">Clients</a>
-                    <a href="#" class="sm:text-[0.9rem] text-[0.7rem] text-white">Blog</a>
-                    <a href="#" class="sm:text-[0.9rem] text-[0.7rem] text-white">About Us</a>
-                    <a href="#" class="sm:text-[0.9rem] text-[0.7rem] text-white">Contact Us</a>
-                </div>                
-                <div class="flex flex-col justify-start gap-1">
-                    <p class="font-bold text-[0.9rem] text-white border-b-1 border-white pb-5 mb-1 ">Our Products</p>
-                    <a href="#" class="sm:text-[0.9rem] text-[0.7rem] text-white">AI Workflows</a>
-                    <a href="#" class="sm:text-[0.9rem] text-[0.7rem] text-white">Service Management</a>
-                    <a href="#" class="sm:text-[0.9rem] text-[0.7rem] text-white">CRM Software</a>
-                    <a href="#" class="sm:text-[0.9rem] text-[0.7rem] text-white">Resource Scheduling</a>
-                    <a href="#" class="sm:text-[0.9rem] text-[0.7rem] text-white">Mobile Apps</a>
-                    <a href="#" class="sm:text-[0.9rem] text-[0.7rem] text-white">Bespoke Software</a>
-                </div>           
-                <div class="flex flex-col justify-start gap-1">
-                    <p class="font-bold text-[0.9rem] text-white border-b-1 border-white pb-5 mb-1 ">Contact</p>
-                    <a class="sm:text-[0.9rem] text-[0.7rem] text-white">Clockwork IT Ltd</a>
-                    <a class="sm:text-[0.9rem] text-[0.7rem] text-white">101 Lockhurst Lane</a>
-                    <a class="sm:text-[0.9rem] text-[0.7rem] text-white">Coventry</a>
-                    <a class="sm:text-[0.9rem] text-[0.7rem] text-white">CV6 5SF</a>
-                    <a class="sm:text-[0.9rem] text-[0.7rem] text-white">T: 03300 577 170</a>
-                </div>                
-                <div class="flex flex-col justify-start gap-1">
-                    <p class="font-bold text-[0.9rem] text-white border-b-1 border-white pb-5 mb-1 ">Details</p>
-                    <a href="#" class="sm:text-[0.9rem] text-[0.7rem] text-white">Terms | Privacy</a>
-                    <a href="#" class="sm:text-[0.9rem] text-[0.7rem] text-white">Our Services</a>
-                    <a href="#" class="sm:text-[0.9rem] text-[0.7rem] text-white">Clients</a>
-                    <a href="#" class="sm:text-[0.9rem] text-[0.7rem] text-white">Blog</a>
-                    <a href="#" class="sm:text-[0.9rem] text-[0.7rem] text-white">About Us</a>
-                    <a href="#" class="sm:text-[0.9rem] text-[0.7rem] text-white">Contact Us</a>
+                <!-- COL 1 -->
+                <div class="flex flex-col justify-startself-start gap-1">
+                    <p class="font-bold text-[0.9rem] text-gray-600 border-b-1 border-gray-600 pb-5 mb-1 ">About Us</p>
+                    <a href="#" class="sm:text-[0.9rem] text-[0.7rem] text-[#08a080]">Sectors</a>
+                    <a href="#" class="sm:text-[0.9rem] text-[0.7rem] text-[#08a080]">Our Services</a>
+                    <a href="#" class="sm:text-[0.9rem] text-[0.7rem] text-[#08a080]">Clients</a>
+                    <a href="#" class="sm:text-[0.9rem] text-[0.7rem] text-[#08a080]">Blog</a>
+                    <a href="#" class="sm:text-[0.9rem] text-[0.7rem] text-[#08a080]">About Us</a>
+                    <a href="#" class="sm:text-[0.9rem] text-[0.7rem] text-[#08a080]">Contact Us</a>
+                </div>   
+                <!-- COL 2 -->             
+                <div class="flex flex-col justify-start self-start gap-1">
+                    <p class="font-bold text-[0.9rem] text-gray-600 border-b-1 border-gray-600 pb-5 mb-1 ">Our Products</p>
+                    <a href="#" class="sm:text-[0.9rem] text-[0.7rem] text-[#08a080]">AI Workflows</a>
+                    <a href="#" class="sm:text-[0.9rem] text-[0.7rem] text-[#08a080]">Service Management</a>
+                    <a href="#" class="sm:text-[0.9rem] text-[0.7rem] text-[#08a080]">CRM Software</a>
+                    <a href="#" class="sm:text-[0.9rem] text-[0.7rem] text-[#08a080]">Resource Scheduling</a>
+                    <a href="#" class="sm:text-[0.9rem] text-[0.7rem] text-[#08a080]">Mobile Apps</a>
+                    <a href="#" class="sm:text-[0.9rem] text-[0.7rem] text-[#08a080]">Bespoke Software</a>
+                </div> 
+                <!-- COL 3 -->          
+                <div class="flex flex-col justify-start self-start gap-1">
+                    <p class="font-bold text-[0.9rem] text-gray-600 border-b-1 border-gray-600 pb-5 mb-1 ">Contact</p>
+                    <a class="sm:text-[0.9rem] text-[0.7rem] text-[#08a080]">Clockwork IT Ltd</a>
+                    <a class="sm:text-[0.9rem] text-[0.7rem] text-[#08a080]">101 Lockhurst Lane</a>
+                    <a class="sm:text-[0.9rem] text-[0.7rem] text-[#08a080]">Coventry</a>
+                    <a class="sm:text-[0.9rem] text-[0.7rem] text-[#08a080]">CV6 5SF</a>
+                    <a class="sm:text-[0.9rem] text-[0.7rem] text-[#08a080]">T: 03300 577 170</a>
+                </div> 
+                <!-- COL 4 -->               
+                <div class="flex flex-col justify-start self-start gap-1">
+                    <p class="font-bold text-[0.9rem] text-gray-600 border-b-1 border-gray-600 pb-5 mb-1 ">Details</p>
+                    <a href="#" class="sm:text-[0.9rem] text-[0.7rem] text-[#08a080]">Terms | Privacy</a>
+                    <a href="#" class="sm:text-[0.9rem] text-[0.7rem] text-[#08a080]">© Copyright CLockwork IT Ltd</a>
+                    <a href="#" class="sm:text-[0.9rem] text-[0.7rem] text-[#08a080] pb-5">2021 All Rights Reserved</a>
+                    <a href="#" class="sm:text-[0.9rem] text-[0.7rem] text-[#08a080]">Designed by Clockwork IT Ltd</a>
                 </div>
             </div>
         </footer>
        
         <script src="" async defer></script>
+        <script>
+            const menuBtn = document.getElementById('menuBtn');
+            const mobileMenu = document.getElementById('mobileMenu');
+
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        </script>
     </body>
 </html>
