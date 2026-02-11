@@ -37,7 +37,7 @@
     justify-content: start;
     align-items: center;
     gap:30px;
-    width: 30%;
+    width: 32%;
 }
 .icon-container{
     display: flex;
@@ -48,6 +48,7 @@
     padding:20px;
     border-radius: 20px;
     gap:15px;
+    background-color: rgba(255, 255, 255, 0.95);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     
 }
@@ -65,6 +66,7 @@
 }
 .st-text{
     font-size: 3rem;
+    flex-wrap: wrap;
 }
 .sh-text{
     font-size: 1.3rem;
@@ -102,5 +104,12 @@
     .mh-text{
         font-size: 3rem;
     }
+    .icon-upper-container{
+        flex-direction: column;
+    }
+    .icon-column{
+        width: 70%;
+    }
+    
 }
 
