@@ -4,6 +4,7 @@
     width: 100%;
     background-image: url(./media/sectors-image.png);
     background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     padding-top: 60px;
@@ -46,7 +47,7 @@
     justify-content: start;
     align-items: center;
     gap:30px;
-    width: 32%;
+    width: 30%;
 }
 .icon-container{
     display: flex;
@@ -77,6 +78,8 @@
     width:1152px;
     padding: 50px; 
     border-radius: 10px;
+}
+.contact-upper-container{
 }
 .contact-container{
     display: flex;
@@ -121,14 +124,19 @@
     padding: 20px 200px 20px 20px;
     border-radius: 3px;
 }
-
-
 #main-heading{
     max-width: 1152px;
     display: flex;
     flex-direction: column;
     align-items: start;
     gap: 30px;
+}
+#git-ssh-text{
+    max-width: 700px;
+}
+#message{
+    width:600px; 
+    height:150px;
 }
 
 
@@ -148,6 +156,16 @@
     .icon-column{
         width: 70%;
     }
-    
+    .contact-container{
+        flex-direction: column;
+        align-items: center;
+        gap:20px;
+    }
+    #git-ssh-text{
+        max-width: 500px;
+    }
+    #message{
+        width:410px; height:150px;
+    }
 }
 
