@@ -73,14 +73,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
     width:1152px;
+    padding: 50px; 
+    border-radius: 10px;
 }
 .contact-container{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    gap: 80px;
     width: 100%;
 }
 
@@ -112,6 +114,12 @@
 .icon-image{
     height: 100px;
     width: 100px;
+}
+.input-box{
+    background-color: white;
+    border: none; 
+    padding: 20px 200px 20px 20px;
+    border-radius: 3px;
 }
 
 
