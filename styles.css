@@ -4,7 +4,6 @@
     width: 100%;
     background-image: url(./media/sectors-image.png);
     background-position: center;
-    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     padding-top: 60px;
