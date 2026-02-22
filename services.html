@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles.css">
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    </head>
+    <body>
+
+        <!-- HEADER Section -->
+        <header class="w-full bg-white border-b border-gray-300 shadow-sm sticky top-0 z-50">
+            <div class="mx-auto max-w-6xl px-4 py-4">
+
+                <!-- Top bar -->
+                <div class="flex items-center justify-between">
+
+                    <!-- Logo -->
+                    <img
+                        src="./media/clockwork-logo.jpg"
+                        alt="Clockwork Logo"
+                        class="h-10 object-contain"
+                    />
+
+                    <!-- Burger button (md and below) -->
+                    <button
+                        id="menuBtn"
+                        class="block lg:hidden text-gray-700 focus:outline-none"
+                        aria-label="Toggle navigation"
+                    >
+                        <!-- Burger icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+
+                    <!-- Desktop navigation -->
+                    <nav class="hidden lg:flex items-center gap-6 text-sm font-medium text-gray-700">
+                        <a href="./index.html" class="hover:text-[#812d8b]">Home</a>
+                        <a href="./sectors.html" class="hover:text-[#812d8b]">Sectors</a>
+                        <a href="./services.html" class="text-[#812d8b]">Our Services</a>
+                        <a href="#" class="hover:text-[#812d8b]">Products</a>
+                        <a href="#" class="hover:text-[#812d8b]">Clients</a>
+                        <a href="#" class="hover:text-[#812d8b]">Blog</a>
+                        <a href="#" class="hover:text-[#812d8b]">About us</a>
+                        <a href="#" class="hover:text-[#812d8b]">Contact us</a>
+
+                        <a href="https://totalctrl.io/login" class="ml-6 hover:text-[#812d8b]">| Client Login</a>
+                        <a href="https://totalctrl.io/customer-portal" class="hover:text-[#812d8b]">| Customer Portal</a>
+
+                        <a
+                        href="#"
+                        class="ml-6 border-2 text-white border-[#812d8b] px-4 py-2 rounded-xl bg-[#812d8b] hover:shadow-lg"
+                        >
+                        Book a FREE Demo
+                        </a>
+                    </nav>
+                </div>
+
+                <!-- Mobile menu -->
+                <div
+                id="mobileMenu"
+                class="hidden lg:hidden"
+                >
+                <nav class="flex flex-col gap-4 text-sm font-medium text-gray-700">
+                    <a href="./index.html" class="hover:text-[#812d8b]">Home</a>
+                    <a href="./sectors.html" class="text-[#812d8b]">Sectors</a>
+                    <a href="./services.html" class="hover:text-[#812d8b]">Our Services</a>
+                    <a href="#" class="hover:text-[#812d8b]">Products</a>
+                    <a href="#" class="hover:text-[#812d8b]">Clients</a>
+                    <a href="#" class="hover:text-[#812d8b]">Blog</a>
+                    <a href="#" class="hover:text-[#812d8b]">About us</a>
+                    <a href="#" class="hover:text-[#812d8b]">Contact us</a>
+
+                    <a href="https://totalctrl.io/login">Client Login</a>
+                    <a href="https://totalctrl.io/customer-portal">Customer Portal</a>
+
+                    <a
+                    href="#"
+                    class="mt-3 border-2 text-white border-[#812d8b] px-4 py-2 rounded-xl bg-[#812d8b] text-center"
+                    >
+                    Book a FREE Demo
+                    </a>
+                </nav>
+                </div>
+
+            </div>
+        </header>
+        <!-- HEADER BANNER -->
+        <div class="main-heading-banner-services">
+            <!-- HEADER Container -->
+            <div class="banner-container-services">
+                <!-- Left Col -->
+                <div>
+                    <p class="mh-text text-white">Our Services</p>
+                    <p>Clockwork offers a range of products designed
+                        to maximise efficiency in your workplace.<br>
+
+                        As well as offering cutting edge software, we also take the time to fully understand your requirements and objectives prior to installation, ensuring your vision and expectation is delivered every time.</p>
+                </div>
+                <!-- Right Col -->
+                <img src="./media/cw-staff-desk.jpg" alt="Clockwork staff working at desks" class="" style="width: 450px; border-radius: 25px;">
+            </div>
+        </div>
+        
+        <script src="" async defer></script>
+        <script>
+            const menuBtn = document.getElementById('menuBtn');
+            const mobileMenu = document.getElementById('mobileMenu');
+
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        </script>
+    </body>
+</html>

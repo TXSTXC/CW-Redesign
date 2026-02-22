@@ -1,4 +1,12 @@
 
+body{
+    width: full;
+    background-color: #08a080;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 500px;
+}
 
 .main-heading-banner{
     width: 100%;
@@ -9,10 +17,26 @@
     padding-top: 60px;
     padding-bottom: 60px;
 }
+.main-heading-banner-services{
+    width: 100%;
+    background-image: url(./media/meeting-image-1.jpg);
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 .banner-container{
     max-width:1152px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+.banner-container-services{
+    max-width:1152px;
+    display: flex;
     justify-content: center;
     align-items: center;
     gap:20px;
