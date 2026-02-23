@@ -124,6 +124,27 @@ body{
     gap: 20px;
     margin-right: 20px;
 }
+.services-icons-container{
+    display: flex;
+    gap: 20px;
+    background-color: white;
+    border-radius: 15px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 250px;
+}
+.services-icons-sub-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.services-icons-sub-container p{
+    font-size: 1rem;
+    color: #757575;
+}
 
 /* TEXT STYLES */
 .text-center{
